@@ -5,8 +5,8 @@ class SignIn extends Component {
     super(props);
 
     this.state = {
-      signInEmail: "",
-      signInPassword: ""
+      signInEmail: '',
+      signInPassword: ''
     };
 
   }
@@ -30,8 +30,10 @@ class SignIn extends Component {
       })
     })
       .then(response => response.json())
-      .then(data => {
-        if (data === 'Success') {
+      .then(user => {
+        if (user.id) {
+          console.log(user);
+          this.props.loadUser(user);
           this.props.routeChange('home');
         }
       })
