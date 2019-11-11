@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+const BACK_END = 'https://still-castle-28885.herokuapp.com/';
+
 class Register extends Component {
   constructor(props) {
     super(props);
@@ -23,7 +25,7 @@ class Register extends Component {
   }
 
   onSubmitRegister = () => {
-    fetch('http://localhost:3000/register',
+    fetch(BACK_END + 'register',
     {
       method: 'post',
       headers: {'Content-Type': 'application/json'},
