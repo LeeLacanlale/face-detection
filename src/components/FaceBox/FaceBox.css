@@ -1,17 +1,3 @@
- /* #inputimage {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: -1;
-}
-
-#canvas {
-    position: relative;
-    top: 15px;
-    left: -10px;
-    z-index:20;
-} */
-
 .bounding-box {
   position: absolute;
   box-shadow: 0 0 0 3px #ff0000 inset;
